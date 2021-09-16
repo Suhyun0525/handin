@@ -203,7 +203,14 @@ typed a branch name as "readme-edits" and created the branch
 
 Highlighted the cell and clicked cell > cell type > Markdown
 Clicked th file name "Untitled" and changed the name to "hw4_shwang"
+Opened Github Desktop and checked changes and clicked 'commit to main' with some description
+Clicked ''Push to origin button
+Cell Type > Heading > typed my name
+	Repeated the same step to write assignment number and the date
 
+2. 
+
+Changed cell type to 'Markdown' and typed problem 2 instruction with '####'so that the letter would be written in appropriate font size
 
 
 *****OUT: Thu Sep 09 11:59:40 EST 2021
