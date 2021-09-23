@@ -1,0 +1,7 @@
+def body_speed(u1, u2):
+    Speed = (t2 -t1)
+    return Speed
+    
+def time_span(t1, t2):
+    Span = (t2 - t1)
+    return Span
