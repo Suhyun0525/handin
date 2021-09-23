@@ -277,3 +277,60 @@ Right clicked the folder 'hw4_shwang' and added it to acrchive and converted it 
 
 
 *****OUT: Thu Sep 16 11:55:40 EST 2021
+
+
+*****IN: Thu Sep 23 5:29:08 EST 2021
+
+1. 
+Created a new folder named 'hw5_shwang'
+Opened Jupyter Notebook and created a new file named 'hw5_shwang.ipynb'
+Opened Github, committeed changes, and clicked 'push to origin'
+In the main homework file, put my name, date, homework number in heading cells
+typed problem numbers with '####' in markdown comments and printed them 
+imported numpy by 'import numpy as np'
+
+2.
+Made lists as below :
+	velocity_list = list( range(0, 100, 10) )
+	time_list = list( range(0, 1000, 100) )
+
+Used print function to see their values 
+	print ( velocity_list )
+	print ( time_list )
+
+Checked the 3rd to 5th and 8 values of the velocity list by : 
+	velocity_list[ 3 : 5 ]
+	velocity_list[ 8 ]
+
+Changed the file's name that contains the acceleration function I made last time into 'acc'
+Put the file into the same forlder as main homework file 
+Typed 'from acc import acceleration' to call the function 
+
+
+3. 
+Typed 'x = np.arange( 1, 100.1, 0.1 )'so that the last x value would be 100.0
+Checked its type by using type function 
+Checked the shape by 'print ( x.shape )'
+Typed 'print ( x )' to see all the vales that x have
+
+
+4. 
+
+5. 
+With 'def,' created a function that calculates body displacement 
+put descriptions for u_init, t ,a
+Put them inside a py file and saved it separately 
+called the function by 'from displacement import displacement'
+Calculated after inserting each values as shown below : 
+	s = displacement(0, 2, 10)
+	print(s)
+	s = displacement(0, 4, 20)
+	print(s)
+	s = displacement(0, 14, 30)
+	print(s)
+Used Casio calculator and Mathway to check if the values are correct
+
+
+
+*****OUT: Thu Sep 16 11:55:40 EST 2021
+
