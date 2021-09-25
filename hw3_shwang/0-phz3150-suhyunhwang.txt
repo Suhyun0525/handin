@@ -339,3 +339,24 @@ Right clicked 'hw5_shwang' folder and clicked 'add to archive' and converted it 
 
 *****OUT: Thu Sep 23 11:18:40 EST 2021
 
+
+
+*****IN: Thu Sep 24 10:30:30 EST 2021
+
+1. 
+Went to 'handin' folder and created a new folder named 'hw6_shwang'
+Opened Jupyter Notebook and created a new python 3 notebook and renamed it as 'hw6_shwang'
+After saving it, made its location as /Desktop/phz3150/handin/hw6_shwang
+Opened Github Desktop and clicked 'commit changes' and 'push to origin' 
+In the main home file, typed my name, homework number, and today's date with heading comments
+Typed problem numbers with '####' in markdown comments
+Printed problem numbers with print function 
+Imported numpy by 'import numpy as np'
+
+
+2.
+imported pyplot by typing 'import matplotlib.pyplot as plt'
+
+
+
+*****OUT: Thu Sep 23 11:18:40 EST 2021
