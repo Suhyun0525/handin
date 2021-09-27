@@ -351,11 +351,32 @@ Opened Github Desktop and clicked 'commit changes' and 'push to origin'
 In the main home file, typed my name, homework number, and today's date with heading comments
 Typed problem numbers with '####' in markdown comments
 Printed problem numbers with print function 
-Imported numpy by 'import numpy as np'
+Imported numpy by 'import numpy as np'c
 
 
 2.
 imported pyplot by typing 'import matplotlib.pyplot as plt'
+Arranged x numpy by typing 'x = np.arange(1, 100.1, 0.5)' and printed it with print function 
+Created a y numpy aray by typing 'y = np.log10( x )'
+Created a z numpy aray by typing 'z = np.sqrt( x )'
+Plotted y and z by typing 'plt.plot( y,z )'
+Set different colors, line styles ,and linewidth for each function by : 
+	plt.plot( y, color = 'pink', linestyle = '--', linewidth = 2 )
+	plt.plot( z, color = 'purple', linestyle = '-', linewidth = 4 )
+Made a name for the plot by typing 'plt.titles( 'Function for HW6', fontsize = 44 )'
+
+
+
+3. 
+Created an array q by typing all the values with the function :
+	q = np.array([ 45, 24, 5, 30, 3, 67, 33, 60, 65, 13, 82, 75, 21, 77, 67, 8, 86, 62, 23, 70, 11, 70, 21, 15, 84, 51, 6, 79, 78, 66, 2, 93, 49, 74, 23, 85, 25, 38, 1, 89 ])
+Printed it by typing 'print( q )'
+
+Printed q values that are larger than 50 and smaller than 70 by :
+	print(q[( q > 50 ) & ( q < 70 )])
+
+
+
 
 
 
