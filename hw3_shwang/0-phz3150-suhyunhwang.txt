@@ -394,9 +394,12 @@ Printed the 20th element of test_tuple by :
 	print( test_tuple [20] )
 Changed the 21st value of test_tuple to 44.0 by : 
 	test_tuple[21] = 44.0
+Printed the list and checked the value successfully changed
+Created a markdown comment and wrote down that the value changed is shown properly
 
 
-
+Created a word_list by : 
+	word_list = [ 'twinkle', 'twinkle', 'little', 'star' ]
 
 
 
