@@ -354,6 +354,7 @@ Printed problem numbers with print function
 Imported numpy by 'import numpy as np'c
 
 
+
 2.
 imported pyplot by typing 'import matplotlib.pyplot as plt'
 Arranged x numpy by typing 'x = np.arange(1, 100.1, 0.5)' and printed it with print function 
@@ -377,10 +378,22 @@ Printed q values that are larger than 50 and smaller than 70 by :
 
 Made a 'test_list' of 'z' by running :
 	test_list = z
+Printed it with print ()function and checked the values
 Printed 12th up to and including 14th of the values of the list by running :
 	print( z[ 11 : 14 ] )
+Changed 28th of the list to 42.0 and printed the list to check the change
+	test_list [28] = 42.0
+	print( test_list )
+Checked the value successfully changed 
+Created a markdown comment and wrote down that the value changed is shown properly
 
-z = np.ones( ( 28, 42.0 ) )
+
+Created a test_tuple out of z by :
+	test_tuple = z
+Printed the 20th element of test_tuple by :
+	print( test_tuple [20] )
+Changed the 21st value of test_tuple to 44.0 by : 
+	test_tuple[21] = 44.0
 
 
 
