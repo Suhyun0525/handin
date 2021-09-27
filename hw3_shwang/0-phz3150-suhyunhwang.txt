@@ -371,9 +371,17 @@ Made a name for the plot by typing 'plt.titles( 'Function for HW6', fontsize = 4
 Created an array q by typing all the values with the function :
 	q = np.array([ 45, 24, 5, 30, 3, 67, 33, 60, 65, 13, 82, 75, 21, 77, 67, 8, 86, 62, 23, 70, 11, 70, 21, 15, 84, 51, 6, 79, 78, 66, 2, 93, 49, 74, 23, 85, 25, 38, 1, 89 ])
 Printed it by typing 'print( q )'
-
+Printed the locations where q values are larger than 50 by typing 'np.where( q > 50 )'
 Printed q values that are larger than 50 and smaller than 70 by :
 	print(q[( q > 50 ) & ( q < 70 )])
+
+Made a 'test_list' of 'z' by running :
+	test_list = z
+Printed 12th up to and including 14th of the values of the list by running :
+	print( z[ 11 : 14 ] )
+
+z = np.ones( ( 28, 42.0 ) )
+
 
 
 
