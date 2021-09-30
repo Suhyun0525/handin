@@ -362,9 +362,18 @@ Created a y numpy aray by typing 'y = np.log10( x )'
 Created a z numpy aray by typing 'z = np.sqrt( x )'
 Plotted y and z by typing 'plt.plot( y,z )'
 Set different colors, line styles ,and linewidth for each function by : 
-	plt.plot( y, color = 'pink', linestyle = '--', linewidth = 2 )
-	plt.plot( z, color = 'purple', linestyle = '-', linewidth = 4 )
-Made a name for the plot by typing 'plt.titles( 'Function for HW6', fontsize = 44 )'
+	plt.figure( figsize = ( 15, 15 ))
+	plt.plot( x, y, color = 'pink' , linestyle = '--', linewidth = 4, label = 'sin' )
+	plt.plot( x, z, color = 'purple' , linestyle = '-.', linewidth = 3, label = 'cos')
+
+	plt.xlabel( 't'                 , fontsize = 30 )
+	plt.ylabel( 'Sin[ 2 $\pi$ t ] ' , fontsize = 30 )
+	plt.title( ' My first sin-cos plot' , fontsize = 40 )
+	plt.show((x, y) and (y, z))
+Made a name for the plot by typing :
+	plt.titles(' My first sin-cos plot' , fontsize = 40 )
+Saved the figure by typing :
+	plt.savefig( 'Function for HW6', format = 'pdf' )
 
 
 
@@ -400,6 +409,51 @@ Created a markdown comment and wrote down that the value changed is shown proper
 
 Created a word_list by : 
 	word_list = [ 'twinkle', 'twinkle', 'little', 'star' ]
+
+Tried to find which words contain 'a' and 'e' by inserting element number into []
+	'e' in word_list[]
+	'a' in word_list[]
+
+Tried to find the index of letters 'a' and 'e' by inserting element number into []
+	print(  word_list[].index( 'e' ) )
+	print(  word_list[].index( 'e' ) )
+
+
+Tried to find if the list has 'star' or 'bright' : 
+	
+	is_this_name_in_list = 'star'
+
+	word_list[0] == is_this_name_in_list
+	word_list[1] == is_this_name_in_list
+	word_list[2] == is_this_name_in_list
+	word_list[3] == is_this_name_in_list
+
+	is_this_name_in_list = 'bright'
+
+	word_list[0] == is_this_name_in_list
+	word_list[1] == is_this_name_in_list
+	word_list[2] == is_this_name_in_list
+	word_list[3] == is_this_name_in_list
+
+
+4. 
+Made a function that calculates the roots of quadratic equation :
+	def quad( a ,b ,c ):
+    	from math import sqrt
+    	f1 = b**2 - 4*a*c
+    	f2 = sqrt(f1)
+    	positive = ( -b + f2 ) / ( 2 * a )
+    	negative = ( -b - f2 ) / ( 2 * a )
+   	 return positive, negative
+
+Inserted given coefficients and printed them :
+	roots = quad( 1 ,-1 ,-12 )
+	print( roots )
+
+
+
+5. 
+Duplicated hw6 file and pasted into 'handin' folder
 
 
 
