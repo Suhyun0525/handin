@@ -1,0 +1,79 @@
+
+*****IN: Fri Oct 01 13:29:08 EST 2021
+
+
+1. 
+Created a folder called 'Midterm' in a 'handin' folder
+Created a file called 'midterm_shwang.ipynb' and put it into the 'Midterm' folder
+Opened Github Desktop, checked the newly created files, clicked 'commit to main' after typing something in summary section, 
+and clicked pushed to origin button 
+In heading comments, typed my name, assignment number, and the date
+
+
+
+
+2. 
+	A) With print() function, gave information and available options about the trip to customers by : 
+print("You are going to choose which cities you will travel between. These are the options available : Atlanta, Baltimore, Boston, Charlotte, Dallas, Denver, Miami, Minneapolis, Orlando, Sacramento, Tampa, Washington."
+     "Please type the name of the city you want to begin your trip in start_city and the name of the city you want to end your trip in target_city.")
+
+	B) asked the input start_city and target_city by : 
+start_city = input("Where do you want to start your trip?: ")
+target_city = input("Where do you want to end your trip?: ")
+
+	C) Created a list of available options by : 
+cities_list = [ 'Atlanta', 'Baltimore', 'Boston', 'Charlotte', 'Dallas', 'Denver', 'Miami', 'Minneapolis', 'Orlando', 
+               'Sacramento', 'Tampa', 'Washington' ]
+
+	D) Used while, not in function to make sure that customers type a right city name by showing an error when they type it wrong :
+start_city = input("\nEnter the city name from where to want to start trip: ")
+while (start_city not in cities_list):
+    print ("\nError please enter a valid city")
+    start_city = input("Enter the city name from where to want to start trip: ")
+target_city = input("Enter the city name where you want to reach at: ")
+while (target_city not in cities_list):
+    print ("\nError please enter a valid city")
+    target_city = input("Enter the city name where you want to reach at: ")
+
+	E)
+
+
+
+
+
+3. 
+	A) imported umpy function by 'import numpy as np'
+	Created travel_data with 'np.load.txt' and called the file 'distances_midterm.dat'
+	Used input function to ask cities that travelers want to start or end their trip
+
+	B) Copy-pasted the function I made in problem 2 part D and changed the name to first_city and second_city as :
+
+first_city = input("\nEnter the city name from where to want to start trip: ")
+second_city = input("Enter the city name where you want to reach at: ")
+while (start_city not in cities_list):
+    print ("\nError please enter a valid city")
+    first_city = input("Enter the city name from where to want to start trip: ")
+    second_city = input("Enter the city name where you want to reach at: ")
+while (target_city not in cities_list):
+    print ("\nError please enter a valid city")
+    first_city = input("Enter the city name from where to want to start trip: ")
+    second_city = input("Enter the city name where you want to reach at: ")
+
+	   Used print function to get the index of the cities as :
+print( first_city, second_city )
+
+
+	C) First, identified the index of first_city as location1 and second city as location2
+		and defined miles as the distance between location1 and location2
+		*int : removes any decimal points of number 
+
+location1 = (cities_list.index(first_city))
+location2 = (cities_list.index(second_city))
+miles = (int (travel_data[location1, location2]))
+print("Between first city and second city you will travel", miles, "miles.")
+
+		- Using "miles," let the distance appear with the appropriate miles 
+
+
+
+*****OUT: Fri Aug 27 13:58:10 EST 2021
