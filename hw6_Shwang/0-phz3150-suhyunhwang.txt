@@ -455,6 +455,7 @@ Inserted given coefficients and printed them :
 5. 
 Duplicated hw6 file and pasted into 'handin' folder
 Opened Github and committed changes and clicked 'push to origin' button
+Added the folder 'hw6_shwang' to archive, checked zip, and clicked OK
 
 
 
