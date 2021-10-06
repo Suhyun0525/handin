@@ -74,6 +74,71 @@ print("Between first city and second city you will travel", miles, "miles.")
 
 		- Using "miles," let the distance appear with the appropriate miles 
 
+	D) First, identified average speed and hours : 
+
+avgSpeed = 75 
+hours = miles/avgSpeed
+
+	Set days, hours, and minutes as 0 to prevent 'undefine' error when they ended up having no value :
+
+d = 0
+h = 0 
+m = 0 
+
+	Used if/else function to represent the result into days, hours, and miutes
+	
+if (hours >= 24):
+        d = int (hours/24)
+        hours = hours % 24
+        h = int (hours)
+        hours = hours % 1
+        m = int (60 * hours)
+    else:
+        h = int (hours)
+        hours = hours % 1
+        m = int (60 * hours)
+    print("Your trip from first_city to second_city will take", d, "days,", h, "hours and", m, "minutes.")
+
+	* % : shows the remnant of the values after division
+
+
+	E) Defined departing city and arriving city for start_city and target_city :
+
+start_city = input("\nEnter the city name from where to want to start trip: ")
+target_city = input("Enter the city name where you want to reach at: ")
+while (start_city not in cities_list):
+    print ("\nError please enter a valid city")
+    start_city = input("Enter the city name from where to want to start trip: ")
+    print ("\nError please enter a valid city")
+    target_city = input("Enter the city name where you want to reach at: ")
+while (target_city not in cities_list):
+    print ("\nError please enter a valid city")
+    start_city = input("Enter the city name from where to want to start trip: ")
+    print ("\nError please enter a valid city")
+    target_city = input("Enter the city name where you want to reach at: ")
+
+	Input Tampa as start_city and Orlando as target_city 
+	
+	Defined first_city as index of start_city and second_city as index of target_city
+
+first_city = (cities_list.index(start_city))
+second_city = (cities_list.index(target_city))
+miles = (int (travel_data[first_city, second_city]))
+print("Between Start_city and target_city you will travel", miles, "miles.")
+
+	Calculated how long it takes from start_city to target_city by : 
+
+locations = [start_city, target_city]
+distanceTimeCalc(locations)
+
+	It gave me 0 days, 1hour, 7 minutes
+
+
+
+F) 
+
+
+4. 
 
 
 *****OUT: Fri Aug 27 13:58:10 EST 2021
