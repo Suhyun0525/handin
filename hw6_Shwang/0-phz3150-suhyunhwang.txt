@@ -469,7 +469,10 @@ Added the folder 'hw6_shwang' to archive, checked zip, and clicked OK
 Created a new folder 'hw7_shwang' in handin folder
 In the folder, created a new python file and named it as 'hw7_shwang'
 Opened Github and clicked 'commit change' then clicked 'push origin' button
-
+In heading comments, put my name, assignment number, and the date
+In markdown comment, put the problem number and printed it
+Import numpy as : 
+	import numpy as np
 
 
 *****OUT: Thu Sep 30 11:14:05 EST 2021
