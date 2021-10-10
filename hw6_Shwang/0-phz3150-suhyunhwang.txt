@@ -461,3 +461,15 @@ Added the folder 'hw6_shwang' to archive, checked zip, and clicked OK
 
 
 *****OUT: Thu Sep 30 11:14:05 EST 2021
+
+
+*****IN: Sun Oct 10 01:47:41 EST 2021
+
+1. 
+Created a new folder 'hw7_shwang' in handin folder
+In the folder, created a new python file and named it as 'hw7_shwang'
+Opened Github and clicked 'commit change' then clicked 'push origin' button
+
+
+
+*****OUT: Thu Sep 30 11:14:05 EST 2021
