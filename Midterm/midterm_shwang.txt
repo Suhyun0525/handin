@@ -135,10 +135,134 @@ distanceTimeCalc(locations)
 
 
 
-F) 
-
 
 4. 
+	A) Added pitstop for the input as : 
+
+first_city = input("Where do you want to start your trip?: ")
+while (first_city not in cities_list):
+    print ("\nError please enter a valid city")
+    first_city = input("Where do you want to start your trip?: ")
+pitstop_city = input("Where do you want to pitspot your trip?: ")
+while (pitstop_city not in cities_list):
+    print ("\nError please enter a valid city")
+    pitstop_city = input("Where do you want to pitspot your trip?: ")
+second_city = input("Where do you want to end your trip?: ")
+while(second_city not in cities_list):
+    print ("\nError please enter a valid city")
+    second_city = input("Where do you want to end your trip?: ")
 
 
-*****OUT: Fri Aug 27 13:58:10 EST 2021
+	B,C,D)
+
+def distanceTimeCalc2(locations):
+    miles1 = (int (travel_data[cities_list.index(locations[0]), cities_list.index(locations[1])]))
+    miles2 = (int (travel_data[cities_list.index(locations[1]), cities_list.index(locations[2])]))
+    miles = miles1 + miles2
+    mpg = 24.9
+    fuel = 16 #gallons
+    print("Between first city and second city you will travel", miles, "miles.")
+    avgSpeed = 75 #mph
+    hours = miles/avgSpeed
+    d = 0 #days
+    h = 0 #hours
+    m = 0 #minutes
+    if (hours >= 24):
+        d = int (hours/24)
+        hours = hours % 24
+        h = int (hours)
+        hours = hours % 1
+        m = int (60 * hours)
+    else:
+        h = int (hours)
+        hours = hours % 1
+        m = int (60 * hours)
+    print("Your trip from first_city to second_city will take", d, "days,", h, "hours and", m, "minutes.")
+    
+    rangex = mpg * fuel
+    costperfill = 16*2.4
+    refill1 = math.ceil(miles1/rangex)
+    refill2 = math.ceil(miles2/rangex)
+    print("You will need to make",refill1, "stops for leg 1 and", refill2, "stops for leg 2.")
+    print("You will pay $", refill1*costperfill + refill2*costperfill, "for the trip in gas.")
+    
+
+loc = [first_city, pitstop_city,second_city]
+distanceTimeCalc2(loc)
+
+
+
+5.
+
+	A) Asked traveler the start city and destination city : 
+
+first_city = input("Where do you want to start your trip?: ")
+while (first_city not in cities_list):
+    print ("\nError please enter a valid city")
+    first_city = input("Where do you want to start your trip?: ")
+second_city = input("Where do you want to end your trip?: ")
+while(second_city not in cities_list):
+    print ("\nError please enter a valid city")
+    second_city = input("Where do you want to end your trip?: ")
+
+
+	B) 
+
+def distanceTimeCalc3(locations):
+    min_total = 10000000;
+    for i in range(12):
+        if (i != (cities_list.index(locations[0]) and cities_list.index(locations[1]))):
+            miles1 = (int (travel_data[cities_list.index(locations[0]), i]))
+            miles2 = (int (travel_data[i, cities_list.index(locations[1])]))
+            temp = miles1 + miles2
+
+            if (temp < min_total):
+                min_total = temp;
+                min_total_index = i;
+    
+    print("Your recommended pitstop is", cities_list[min_total_index])
+    print("Between first city and second city you will travel", min_total, "miles.")
+    avgSpeed = 75 #mph
+    mpg = 24.9
+    fuel = 16
+    hours = min_total/avgSpeed
+    d = 0 #days
+    h = 0 #hours
+    m = 0 #minutes
+    if (hours >= 24):
+        d = int (hours/24)
+        hours = hours % 24
+        h = int (hours)
+        hours = hours % 1
+        m = int (60 * hours)
+    else:
+        h = int (hours)
+        hours = hours % 1
+        m = int (60 * hours)
+    print("Your trip from first_city to second_city will take", d, "days,", h, "hours and", m, "minutes.")
+    
+    rangex = mpg * fuel
+    costperfill = 16*2.4
+    refill1 = math.ceil(min_total/rangex)
+    print("You will need to make",refill1, "stops.")
+    print("You will pay $", refill1*costperfill, "for the trip in gas.")
+
+loc = [first_city, second_city]
+distanceTimeCalc3(loc)
+
+		2)The pitstop is Washington.
+
+		3) The statement printed like this :
+Your recommended pitstop is Washington
+Between first city and second city you will travel 885 miles.
+Your trip from first_city to second_city will take 0 days, 11 hours and 48 minutes.
+You will need to make 3 stops.
+You will pay $ 115.19999999999999 for the trip in gas.
+
+
+6.
+Added the 'midterm' file to archive and made it into zip file 
+In Github, clicked commit to change then clikced push to origin
+
+
+*****OUT: Thu Oct 07 03:47:53 EST 2021
