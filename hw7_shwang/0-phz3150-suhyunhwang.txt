@@ -475,29 +475,112 @@ Import numpy as :
 	import numpy as np
 
 
+
 2. 
 Created a function called word_to_number
-Put dictionary inside the 
-number_dic = { 'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7
+Put dictionary inside the function : 
+
+def word_to_number(word):
+    
+    number_dic = { 'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7
                   , 'eight': 8, 'nine': 9, 'ten': 10, 'eleven': 11, 'twelve': 12, 'thirteen': 13, 'fourteen': 14
                   , 'fifteen': 15, 'sixteen': 16, 'seventeen': 17, 'eighteen': 18, 'nineteen': 19, 'twenty': 20}
+    
+    return number_dic[word]
+
+call the function for: ‘three’, ‘seven’, ‘twelve’, ‘sixteen’and ‘nineteen’ and printed an informative statements with the results :
+word = 'three'
+print(word, 'is', word_to_number(word))
+word = 'seven'
+print(word, 'is', word_to_number(word))
+word = 'twelve'
+print(word, 'is', word_to_number(word))
+word = 'sixteen'
+print(word, 'is', word_to_number(word))
+word = 'nineteen'
+print(word, 'is', word_to_number(word))
 
 
 
 
 3.
+
+Splitted the sentence by the word it was made of :
+
+string = 'Deleting an item from a list or array while iterating over it is a Python problem that is well known to any experienced software developer'
+
+for word in string.split():
+    print(word)
+
+
+Used for function and printed the longest word at last : 
+
+string = 'Deleting an item from a list or array while iterating over it is a Python problem that is well known to any experienced software developer'
+longestWord = 'a'
+for word in string.split():
+    if (len(longestWord) < len(word)):
+      longestWord = word
+    print(word)
+print()
+print('Longest Word:',longestWord)
+
+
+Used while function and printed the longest word at last : 
+
+string = 'Deleting an item from a list or array while iterating over it is a Python problem that is well known to any experienced software developer'
+longestWord = 'a'
+while ' ' in string:
+    i = string.index(' ')
+    if (len(longestWord) < len(string[:i])):
+      longestWord = string[:i]
+    print(string[:i])
+    string = string[i+1:]
+print()
+print('Longest Word:',longestWord)
+
+
+
+
+4.
 Created an x array that goes from 100 to 1000 in step of 25 : 
 	x = np.arange(100,1000,25)
 
+Create an arrayythat is equalin size toxbut full of zeros and Create a FOR loop that scans throughyand assignsy[i]a value equaltox[i]/2IF iis an even number,orx[i]**2IF iis anoddnumber:
+
+y = [0] * len(x)
 
 
-5. 
+print(y)
+print()
+for i in range(0, len(y)):
+    if (i % 2 == 1):
+        y[i] = x[i]**2
+    else:
+        y[i] = x[i]/2
+print(x)
+print()
+print(y)
 
-Opened the file 'student_data.csv' with :
+
+
+
+5.
+ 
+read the file 'student_data.csv' with :
 
 f = open('student_data.csv','r')
 all_grades = f.read()
 f.close()
 
 
-*****OUT: Thu Sep 30 11:14:05 EST 2021
+
+
+6. 
+
+Copied the hw7_shwang file into the hanin folder 
+Opened Github and clicked commit to change and push origin
+Made a screenshot for both the file committed and added to the folder hw7_shwang
+Added the folder to archive and clicked zip to zip the folder
+
+
+*****OUT: Thu Oct 30 10:14:27 EST 2021
