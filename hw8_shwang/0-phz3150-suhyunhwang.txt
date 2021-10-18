@@ -466,7 +466,7 @@ Added the folder 'hw6_shwang' to archive, checked zip, and clicked OK
 *****IN: Sun Oct 10 01:47:41 EST 2021
 
 1. 
-Created a new folder 'hw7_shwang' in handin folder
+Created a new folder 'hw7_shwang' in handin folder 
 In the folder, created a new python file and named it as 'hw7_shwang'
 Opened Github and clicked 'commit change' then clicked 'push origin' button
 In heading comments, put my name, assignment number, and the date
@@ -592,6 +592,59 @@ Copied the hw7_shwang file into the hanin folder
 Opened Github and clicked commit to change and push origin
 Made a screenshot for both the file committed and added to the folder hw7_shwang
 Added the folder to archive and clicked zip to zip the folder
+
+
+*****OUT: Thu Oct 30 10:14:27 EST 2021
+
+
+
+*****IN: Sun Oct 16 02:30:42 EST 2021
+
+1. 
+Created a folder named 'hw8_shwang':
+
+	In Jupyter Notebook, ../Desktop/phz3150/handin - clicked 'New' > 'folder'
+
+Opened Github Desktop and checked the folder created and clicked 'commit to main' then 'push to origin'
+Put this log into the folder
+Created a file called 'hw8_shwang' insied the folder
+Typed each homework problem numbers in markdown comments then printed them 
+
+2. 
+
+
+3. 
+Inside the folder hw8_shwang, created a new text file and changed its name to 'hw8_support_funct.py' 
+created a function that takes an array of numbers as input and rearrange the numbers in sequence :
+
+def order_array(input_array):
+    
+    for i in range(len(input_array)):
+        m_index = i
+        for j in range(i, len(input_array)):
+            if input_array[j] < input_array[m_index]:
+                m_index = j
+        input_array[i], input_array[m_index] = input_array[m_index], input_array[i]
+        
+    return print(input_array)
+
+Called the function in the main homework file by : 
+	from hw8_support_funct import order_array
+
+Run the function for np.array([4,5,2,10,42,22,8,12]) as:
+	
+	input_array = np.array([4,5,2,10,42,22,8,12])
+	order_array(input_array
+
+	-> The result : [ 2  4  5  8 10 12 22 42]
+
+Used np.sort() function to check if it was correct :
+	
+	np.sort(np.array([4,5,2,10,42,22,8,12]))
+
+	-> The result turned out the same
+
+
 
 
 *****OUT: Thu Oct 30 10:14:27 EST 2021
