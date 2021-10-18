@@ -1,4 +1,7 @@
 def order_array(input_array):
+    """function that rearranges the numbers in an array in smaller to larger order.\
+    Input: An array of number 
+    Output: The array of nunber rearranged in order """
     
     for i in range(len(input_array)):
         m_index = i
@@ -8,4 +11,3 @@ def order_array(input_array):
         input_array[i], input_array[m_index] = input_array[m_index], input_array[i]
         
     return print(input_array)
-       
