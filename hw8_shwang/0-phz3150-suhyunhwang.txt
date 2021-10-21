@@ -754,6 +754,21 @@ plt.title("Comparing the Distance of the Planets")
 plt.show()
 
 
+Used the names of the planets as tick labels on the x axis : 
+
+plt.xticks(ticks=indices, labels=planet_names)
+
+
+
+5. 
+To conver the folder into zip file:
+
+	'add to archive' > zip > ok
+
+To commit the file : 
+
+	commit to change > push to origin
+
 
 
 *****OUT: Thu Oct 21 05:20:27 EST 2021
