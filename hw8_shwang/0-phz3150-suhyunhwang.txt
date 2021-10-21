@@ -611,6 +611,48 @@ Created a file called 'hw8_shwang' insied the folder
 Typed each homework problem numbers in markdown comments then printed them 
 
 2. 
+Made the imports:
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+Made x and y arrays:
+
+x = np.arange(-100, 100.0, 0.1)
+y = np.arange(-100, 100.0, 0.1)
+
+Made the function:
+
+def ellipse(x, y, a, b):
+    """Function that plots an ellipse
+    
+    Input: x(x-coordinate), y(y-coordinate), a(width), b(height)
+    Output: plot   """
+    
+    x,y = np.meshgrid(x,y)
+    
+    z = (( x**2 / a**2 ) + ( y**2 / b**2 ) - 1 ) 
+    
+    fig, ax = plt.subplots()
+    
+    ax.contour(x,y,z,[0])
+   # ax.set_aspect(1)
+    plt.xlim(-15,15)
+    plt.ylim(-25,25)
+    
+    return plt.show()
+
+
+Called the function for specific a,b values:
+
+a = 12
+b = 2
+print(ellipse(x, y, a, b))
+
+a = 4
+b = 20
+print(ellipse(x, y, a, b))
+
 
 
 3. 
@@ -645,6 +687,73 @@ Used np.sort() function to check if it was correct :
 	-> The result turned out the same
 
 
+4.
+Made a function inside the file hw8_support_func.py:
+
+def kepler_3rd(period):
+    """Function that calculates the distance of a planet from the sun
+    Input: Period of the planet [years]
+    Output: Distance of the planet [AU]  """
+    
+    a_orb = 1
+    earth_period = 1
+    P2 = period
+    P1 = earth_period
+    𝛼1 = a_orb
+    
+    𝛼2 = 𝛼1 * (P2**2 / P1**2)**(1./3.)
+
+    return "%.1f" %𝛼2
+
+Called the function :
+
+from hw8_support_funct import kepler_3rd
 
 
-*****OUT: Thu Oct 30 10:14:27 EST 2021
+Entered the year values :
+
+period = 87.96 / 365.25
+kepler_3rd(period) 
+period = 224.7 / 365.25
+kepler_3rd(period)
+period = 686.97 / 365.25
+kepler_3rd(period)
+period = 4332.82 / 365.25
+kepler_3rd(period)
+period = 10775.6 / 365.25
+kepler_3rd(period)
+period = 30687.15 / 365.25
+kepler_3rd(period)
+period = 60190.03 / 365.25
+kepler_3rd(period)
+
+
+Made a comparing plot for two values and set the different colors for two:
+
+my_values = [0.4, 0.7, 1.524, 5.2, 9.5, 19.2, 30.1]
+
+actual_values = [0.4, 0.7, 1.524, 5.2, 9.6, 19.2, 30.1]
+
+
+planet_names = ['Mercury','Venus','Mars','Jupiter','Saturn','Uranus','Neptune']
+
+
+indices = np.arange(len(planet_names))
+
+width = 0.20
+
+plt.bar(indices, my_values, width=width, color= 'red')
+plt.bar(indices + width, actual_values, width=width, color = 'lightgreen')
+
+plt.xticks(ticks=indices, labels=planet_names)
+
+plt.xlabel("planets")
+plt.ylabel("distance from the sun")
+plt.title("Comparing the Distance of the Planets")
+
+plt.show()
+
+
+
+
+*****OUT: Thu Oct 21 05:20:27 EST 2021
