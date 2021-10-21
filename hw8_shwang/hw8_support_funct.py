@@ -11,3 +11,21 @@ def order_array(input_array):
         input_array[i], input_array[m_index] = input_array[m_index], input_array[i]
         
     return print(input_array)
+
+
+
+
+def kepler_3rd(period):
+    """Function that calculates the distance of a planet from the sun
+    Input: Period of the planet [years]
+    Output: Distance of the planet [AU]  """
+    
+    a_orb = 1
+    earth_period = 1
+    P2 = period
+    P1 = earth_period
+    𝛼1 = a_orb
+    
+    𝛼2 = 𝛼1 * (P2**2 / P1**2)**(1./3.)
+
+    return "%.1f" %𝛼2
