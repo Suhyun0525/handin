@@ -1,0 +1,18 @@
+def acceleration(u1, u2, t1, t2):
+    """Function hat takes the different speeds (u1,u2) of a body at times t1 and t2 and 
+    calculates the acceleration of the body"""
+
+    a = (u2 - u1) / (t2 - t1)
+    return a
+    
+   
+a = acceleration(10, 13, 0, 2)
+print (a)
+a = acceleration(15, 30, 10, 14)
+print (a)
+a = acceleration(32, 36, 14, 16)
+print (a)
+a = acceleration(42, 20, 28, 32)
+print (a)
+a = acceleration(20, 22, 0, 10)
+print (a)

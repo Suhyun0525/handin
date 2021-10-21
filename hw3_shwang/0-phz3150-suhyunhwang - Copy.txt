@@ -1,0 +1,197 @@
+Suhyun Hwang 
+
+Log for PHZ 3150, Fall 2021
+
+*****IN: Fri Aug 27 13:29:08 EST 2021
+
+Made a directory for the class here:
+
+C:\Users\ronna\OneDrive\Desktop\Suhyun Hwang\phz3150
+
+Opened notepad, started this log, saved as:
+
+C:\Users\ronna\OneDrive\Desktop\Suhyun Hwang\phz3150\handin\hw1_Suhyun_Hwang\0-phz3150-suhyunhwang.txt
+
+
+
+*Description*
+
+1.Opened File Explorer on taskbar, went to desktop, created folder “Suhyun Hwang,” then folder “phz3150” in the folder, then “handin” and “hw1_Suhyun_Hwang” according to the instructions.
+
+2.Opened Google Chrome and searched for libgen. Typed in “Think Python” in the search bar. Clicked the link for the book and downloaded from the website.
+
+3.Went back into File explorer and created a new folder called “books” using the New Folder Button. Afterwards, moved the PDF of the book from the Downloads folder into the newly created books folder.
+
+4.Opened a new tab on Google Chrome, searched for “7-zip” and selected the first link shown. From there, clicked the download link for the 64-bit version. 
+
+5.Going back to the “hw1_Suhyun_Hwang” folder, right-clicking the folder and selecting “adding to archive” with the help of 7-zip.
+
+6.Opened Webcourses, going to the course and selecting the assignment tab. Clicked “HW1” Assignment and submitted the .zip folder for submission.
+
+
+
+
+
+UCF Physics PHZ 3150: Introduction to Numerical Computing
+
+           Name: Suhyun Hwang
+          Email: gracehwang@knights.ucf.edu
+	  Phone: 407-590-8046
+          Major: Photonic Engineering
+           Year: Sophomore
+             ID: 5315748
+
+How did you hear about this course?
+
+- The course is one of the prerequisites for my major. 
+
+Do you have a laptop you can bring to class, install software on, etc.?
+
+- Yes
+
+What operating system and version does it run?
+
+- Windows 10
+
+How much free disk space does it have?
+
+- 159GB
+
+What operating systems are you comfortable working in?
+
+- Windows
+
+What computer classes have you taken, including high school,
+extracurricular, etc.?
+
+- Never
+
+Have you ever programmed a computer?
+
+- No
+
+   In what language(s)?
+
+   Summarize your experience:
+
+Have you taken statistics or probability?
+
+- STA 2023
+
+Why are you taking this course?
+
+- It's prerequisite for my major.
+
+Are there particular topics you hope to learn?
+
+- Coding
+
+If you have worked with scientific data or modeling before, briefly
+describe your experience:
+
+- Never
+
+Have you ever been involved with a science club or similar?  If so,
+describe:
+
+- Never
+	
+http://libgen.li/ads.php?md5=761a6355c2b7a7b95460569f841ca7c3
+
+*****OUT: Fri Aug 27 13:58:10 EST 2021
+
+
+
+
+
+*****IN: Tue Sep 01 13:02:55 EST 2021
+
+
+problem 1.
+
+1. Went to:https://conda.io/miniconda.html
+2. Downloaded the Win-dows Python3.764-bit installer at the top of the page.
+3. After downloading the file, opened the setup 
+4. Next > I agree > Just Me > Next > Destination Folder as C:\Users\bless\miniconda3
+5. Opened the Anaconda prom (Anaconda3) and typed "conda install jupyter"
+6. Searched jupiter in Windows Start and opened Jupiter Notebook
+7. Opened Snipping tool from Windows Start and captured Jupiter page
+8. Opened File Exploder and renamed the capture to homework_and_coding
+9. Opened the the file as PDF viewer and saved it so that the file name would become homework_and_coding.pdf
+10. Opened Anaconda Prompt and typed "python --version"  - 
+
+
+(a) Python Version : 3.7.1
+
+
+(b)
+https://desktop.github.com/ and downloaded 64beat
+2. sign in for Github and authorized access to my account
+3. cloned to phz3150_main_dir
+
+
+Problem 2.
+
+Correct syntax/Incorrect Tokens:1 st1ll bel1eve.
+
+Incorrect syntax/Correct Tokens: Anyone not here be.
+
+Main feature of natural languages prevents their use (so far) as programming languages
+: Evolution of language 
+
+- Reason : Since language changes over time, meaning of words can even slightly change.  
+
+
+problem 3.
+
++ > New Respiratory > named hello -world > put description > Initialize with README
+typed a branch name as "readme-edits" and created the branch
+
+Clicked README.md file 
+
+
+*****OUT: Thu Sep 02 11:18:40 EST 2021
+
+
+*****IN: TUE Sep 07 11:25:04
+
+1. Created a new folder named hw3_shwang 
+location : C:\Users\bless\Desktop\phz3150\handin\hw3_shwang
+
+2. 
+	a. Entered to https://copy.sh/v86/ and opened Arch Linux
+		Typed 'mkdir hw3_shwang'
+
+
+	All steps I did : 
+		mkdir phz 3150/
+		mkdir phz 3150/handin/hw3_shwang 
+
+  	b. typed 'date' and 'Sun Jan 3 06:29:23 UTC 2021' appeared.
+
+	c. typed 'cd ..' and went out of the folder 'hw3_shwnag' and typed 'pwd' to double check where I am
+
+	d. current directory changed from '~/hw3_shwang' to '~' and removed the folder by commanding 'rm -r hw3_shwang'
+
+	e. typed 'ls' and it shows 'bin boot dev etc home lib lost+found mnt opt proc root run sbin srv sys tmp usr var'
+	   typed 'ls -l' to see it in the long output format
+	   typed 'ls -ltr to see it in a reverse time order
+	   typed 'ls -lh' to see it in a human readable format
+	   
+
+3. 
+	a. Created a repository : + > New Respiratory > named hello -world > put description > Initialize with README > Created a repository
+typed a branch name as "readme-edits" and created the branch
+	
+	b. Dragged the file into my respiratory so that the github can track 
+
+
+	c.Dragged folder 'handin' into Github Desktop
+
+
+	d. Downloaded test.dat from webcourses and added to the folder 'hw3_shwang'and committed the changes
+
+	e. copied hw3 and copied pasted to the handin folder
+	   
+
+
