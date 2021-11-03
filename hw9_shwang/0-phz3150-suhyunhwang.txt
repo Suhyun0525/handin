@@ -943,4 +943,6 @@ plotFiller(x, fx, gx)
 5.
 Will right click the folder hw9_shwang and click add to archive, then click zip and convert it to zip file
 In Github, committed changes and clicked push to origin button
-*****OUT: Thu Oct 21 05:20:27 EST 2021
+
+
+*****OUT: Thu Oct 28 11:57:27 EST 2021
