@@ -1088,3 +1088,68 @@ In Github, committed changes and clicked push to origin button
 
 
 *****OUT: Thu Nov 04 11:48:27 EST 2021
+
+
+*****IN: Fri Nov 12 3:23:46 EST 2021
+
+1.
+Under handin folder, created a folder named hw11_shwang
+printed each problems' numbers
+
+2.
+Imported numpy as np 
+
+Created a code that tests different models (so different combinations of a and b) to find 
+the best-fit model for dataset y(x) and printed best parameter a and b with informative statements
+
+
+3. 
+
+a. Created a function wind_chill that takes as input 
+the actual temperature on a given day and the wind speed and returns the wind 
+chill temperature : 
+
+def wind_chill( T, V ):
+    """Function that calculates the wind chill factor.
+    Input: the actual temperature T and the wind speed V
+    Output: wind chill temperature WC """
+    
+    WC = 35.74 + 0.6215 * T - 35.75 * V**0.16 + 0.4275 * T * V**0.16
+    WC = round(WC, 2)
+    
+    print("Today's wind chill temperature is", WC,"°F")
+
+
+Ran it for a day with T = 20F and V = 55mph and print the 
+result with an informative statement 
+
+
+
+
+b. Created a function parallax_to_distance that takes as input a dictionary with 
+information on stars observed (their name and their parallax) and returns a 
+dictionary with the names of the stars and their distances from Earth :
+
+def parallax_to_distance(parallax_dic):
+    """Function that returns a dictionary with the names of the stars and their distances from Earth
+    Input: the star's name and its parallax
+    Output: a dictionary with the names of the stars and their distances from Earth """
+    
+    distance_dic = {}
+    for key in parallax_dic:
+        distance_dic[key] = 1 / ( parallax_dic[key] / 1000)
+    return distance_dic
+
+
+Called the function for a dictionary :
+{ 'Betelgeuse' : 7.63, 'Antares' : 5.89, 'Spica' : 13.06, 'Proxima Cen' : 768 }
+
+
+c. 
+
+4. will add the file to archive, click 'zip', then 'okay' button
+Will click 'commit changes' in Github, then click 'push origin' button
+
+
+
+*****OUT: Thu Nov 04 11:48:27 EST 2021

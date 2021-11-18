@@ -949,13 +949,142 @@ In Github, committed changes and clicked push to origin button
 
 
 
-*****IN: Mon Oct 25 10:34:30 EST 2021
+*****IN: Fri Oct 29 3:34:30 EST 2021
 
 1. 
+Made a new folder named hw10_<yourname> under handin folder. 
+printed each problem numbers
+
+2.
+Made a class 'holiday frenzy':
+
+class holiday_frenzy:
+    def __init__(self,a,b,c, number_of_gifts, wrap_paper_available):
+        self.dimension1 = a
+        self.dimension2 = b
+        self.dimension3 = c
+        self.gifts = number_of_gifts
+        self.paper = wrap_paper_available
+     
+    def surface_area(self):
+        area = self.dimension1 * self.dimension2 
+        return area
+       
+    def volume(self):
+        volume = self.surface_area() * self.dimension3
+        return volume
+    
+    def enough_paper(self):
+        if self.volume() <= self.paper:
+            return True
+        else:
+            return False
+    
+    def fits(self):
+        if self.volume() >= self.gifts * 25:
+            return True
+        else:
+            return False
+            
+    def print_gift(self):
+        print("Your box surface area is", self.surface_area(), "inches^2 and its volume is", self.volume(), "inches^3.")
+        
+        if self.enough_paper() == True:
+            print("You have enough paper to wrap your box.")
+        else:
+            print("You don't have enough paper to wrap your box.")
+            
+        if self.fits() == True:
+            print("Your gifts fit in the box.")
+        else:
+            print("Your gifts do not fit in the box.")
+
+
+Tested it for (a, b, c, number_of_gifts, wrap_paper_available) = 
+(10,10,10,15,800) ; (10,10,10,55,1000) and (100,20,10,55,300). 
+
+
+
+
+3.
+
+a) 
+def piston(V,P0,V0,T0,gamma):
+    """Function that calculates the pressures for the piston volumes in V, using the adiabatic law and 
+    the temperatures using the ideal gas law.
+    Input: an array of N volumes, initial (P; V; T) values
+    Output: Pressures of the piston & the temperatures """
+    
+    for i in V:
+        P = (P0 * V0 ** gamma) / (i ** gamma)
+        T = (T0 * P * i) / (P * V0)
+        Array = []
+        Row = np.array([P,V,T])
+        return Array.append(Row)
+    
+
+
+4.
+
+Made each arrays as the instruction:
+
+x = np.linspace(12, 46, 100)
+y = np.sin((2 * np.pi * x) / 16) * np.cos((2 * np.pi * x) / 8)
+z = z = np.cos((np.pi * x) / 9) * np.sin((np.pi * x) / 6)
+
+a) Plotted y(x) and z(x) for 20<x<40 :
+
+plt.figure(figsize = (8, 8))
+
+plt.plot(x, y, color = 'red', linestyle = '-', linewidth = 1, label = 'Y')
+plt.plot(x, z, color = 'blue', linestyle = '--', linewidth = 1, label = 'Z')
+
+plt.xlabel('X'  , fontsize = 30)
+plt.ylabel('Y & Z', fontsize = 30)
+
+plt.xlim(20, 40)
+
+plt.yticks(np.arange(-1.0, 1.5, 0.5), fontsize = 20)
+plt.xticks(np.arange(20, 40.1, 10), fontsize = 20, )
+
+plt.tick_params(axis='both',which='major',length=3, width=1,direction='out')
+
+plt.legend( loc = 2, prop = {'size': 30 } )
+
+plt.show()
+
+c) Made two 2D arrays of zeros: data and data2, both with sizes equal 
+to (length of x, length of y).  
+
+d)
+for i in data:
+    for j in data:
+        print(y[i]*z[j])
+        
+        
+for i in data2:
+    for j in data2:
+        print(y[i]/z[j])
+
+e)
+print( z[ np.where ( 0 < y < 14 ) ] )
+print(data[np.where(0 < y < 0.2 )])
+print(data[np.where(-0.16 < z < 0 )])
+
+
 
 5. 
-Code >  Main branch > create a new file :
-Pasted my code there and saved it as 'Problem 5 for hw 10', then clicked 'create a pull request'
+
+Made a function for a
+Opened phz3150/group_assignment-team-1 in Github Desktop > Created a new branch named 'Team1_shwang' > Publish branch > 
+Made screenshots of each problem requirements
+
+6. 
+Will right click the folder hw9_shwang and click add to archive, then click zip and convert it to zip file
+In Github, committed changes and clicked push to origin button
 
 
-*****OUT: Thu Oct 28 11:57:27 EST 2021
+
+
+
+*****OUT: Thu Nov 04 11:48:27 EST 2021
