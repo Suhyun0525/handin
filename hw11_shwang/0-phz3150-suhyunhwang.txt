@@ -1145,11 +1145,18 @@ Called the function for a dictionary :
 { 'Betelgeuse' : 7.63, 'Antares' : 5.89, 'Spica' : 13.06, 'Proxima Cen' : 768 }
 
 
-c. 
+c. Made a function matrix_mult that takes as input two matrices and 
+multiplies them
+
+Called matrix_mult for: 
+A1 = np.array( [ [1, 2, 3 ],   [4, 5, 6] ])  & A2 = np.array( [ [2, 3] ,  [2 , 2 ] ] ) ;  
+B1 = np.array( [ [1, 0], [0, 1] ]) & B2 = np.array( [ [4, 1], [ 2,1 ] ] ) and 
+C1 = np.array( [ [1, 0, 3], [0, 1, 4], [2, 1 , 8] ]) & C2 = np.array( [4, 1 , 5] ) 
+ 
 
 4. will add the file to archive, click 'zip', then 'okay' button
 Will click 'commit changes' in Github, then click 'push origin' button
 
 
 
-*****OUT: Thu Nov 18 11:45:27 EST 2021
+*****OUT: Thu Nov 18 11:50:48 EST 2021
