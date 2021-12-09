@@ -1,0 +1,283 @@
+*****IN: Fri Dec 03 13:29:08 EST 2021
+
+
+1. renamed the file to 'Final_project_fall_2021_shwang'
+Imported the necessary packages and plotted images
+Created an empty list : 
+key_code = []
+
+
+2. Made a list 'message' :
+
+Made a dictionary 'letters_numbers'
+
+
+Make a code that loops over the numbers in the note and uses the dictionary to decode the message 
+and printed it out :
+
+for i in message:
+    for key, value in letters_numbers.items():
+        if i == value:
+            print(key)
+
+
+3. Wrote a code that reads the book and prints how many 'thirteen's are there with informative statement:
+
+with open("the_blue_book.dat", "r", encoding = 'utf-8') as f:   
+    contents = f.read()
+    count = contents.count("thirteen")
+    
+    
+print(count "of thirteens were found.")
+
+
+
+Populated the key_code :
+
+key_code.append(6)
+
+
+
+4. Printed the last line :
+
+with open("the_blue_book.dat", "r", encoding = 'utf-8') as f:
+    for last_line in f:
+        pass
+print(last_line)
+
+
+Read the data :
+
+data = np.array(np.loadtxt( "the_secret_painting.dat" ))
+
+
+Made a contour plot : 
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+fig, ax = plt.subplots(1,1)
+cp = ax.contourf(data, [0, 1, 2])
+#fig.colorbar(cp)
+plt.show()
+
+
+Populated the key_code : 
+
+key_code.append(6)
+
+
+
+5. 
+
+Made a code that reads all the blue book (2 points) and counts how many 'one's, 'two's,'three's...'seven's the book has :
+
+file = open("the_blue_book.dat", "r", encoding = 'utf-8')
+read_data = file.read()
+search_one = 'one'
+search_two = 'two'
+search_three = 'three'
+search_four = 'four'
+search_five = 'five'
+search_six = 'six'
+search_seven = 'seven'
+word_count1 = read_data.lower().count(search_one)
+word_count2 = read_data.lower().count(search_two)
+word_count3 = read_data.lower().count(search_three)
+word_count4 = read_data.lower().count(search_four)
+word_count5 = read_data.lower().count(search_five)
+word_count6 = read_data.lower().count(search_six)
+word_count7 = read_data.lower().count(search_seven)
+print(word_count1, word_count2, word_count3, word_count4, word_count5, word_count6, word_count7 )
+
+
+Added the numbers up for the counts of 'two', 'three',...,'seven' and devide with the amount of 'one's :
+
+file = open('the_blue_book.dat', 'r', encoding='utf-8')
+read_data = file.read().strip().lower()
+word_count = sum([read_data.count(word) for word in ['one', 'two', 'three', 'four', 'five', 'six', 'seven']])
+count_one = read_data.lower().count('one')
+print(word_count / count_one) 
+
+
+printed the integer of the division :
+
+int_division = int(word_count / count_one)
+print(int_division)   
+
+
+Populated the key_code :
+
+key_code.append(2)
+
+
+
+6.
+
+Read data from sleigh_speeds.dat as chocolate_sleigh : 
+
+sleigh_data = np.array(chocolate_sleigh)
+
+
+
+Assigned each column of the data to an appropriately named variable :
+
+chocolate_sleigh1 = chocolate_sleigh.transpose()
+time = chocolate_sleigh1[0]
+location = chocolate_sleigh1[1]
+GPS_error = chocolate_sleigh1[2]
+
+
+Plot the sleigh's distance as a function of time making a publication-ready plot with errorbars and limit the xrange to only show the first 600 seconds of the ride :
+
+plt.figure(figsize=(12,8))
+
+plt.plot(time, location)
+plt.errorbar( time,  location, yerr = GPS_error, xerr = 0.5,linestyle='none', marker='o', markersize = 8 )
+
+plt.xticks(fontsize =20)
+plt.yticks(fontsize = 20)
+plt.xlabel('Time', fontsize = 24)
+plt.ylabel('Distance', fontsize = 24)
+plt.xlim(0,601) 
+plt.show()
+
+
+
+Made a function sort_it_all( in1, in2, in3 ) that gets as input 3 arrays and 
+then sorts all arrays based on the sorting of the first array : 
+
+def sort_it_all(in1, in2, in3):
+    
+    in1 = np.array(in1)
+    in2 = np.array(in2)
+    in3 = np.array(in3)
+    
+    idx = in1.argsort()
+    out1 = in1[idx]
+    out2 = in2[idx]
+    out3 = in3[idx]
+    
+    print(out1)
+    print(out2)
+    print(out3)
+
+
+Called the function for sleigh_data by : 
+
+sort_it_all(time, location, GPS_error)
+
+
+
+7. Fixed the error 
+
+Populated the key_code : 
+
+key_code.append(m)
+
+
+8. 
+
+
+read in the data from lighthouse_data.dat :
+
+lighthouse_data = np.array(np.loadtxt( 'lighthouse_data.dat' ))
+
+
+Period of the light house : 
+
+lighthouse = np.array(lighthouse_data)
+lighthouse1 = lighthouse.transpose()
+col1 = lighthouse1[0]
+col2 = lighthouse[1]
+np.set_printoptions(suppress=True)
+#print(lighthouse1[1])
+arrIdxs = np.array([])
+
+period = int(lighthouse1[0][452] - lighthouse1[0][50])
+print(period)
+x = int(period / 10)
+y = int(period % 10)
+print(x, y)
+
+
+Populated the key_code :
+
+key_code.append(x)
+key_code.append(y)
+
+printed the key_code
+
+
+
+9.
+
+Imported : 
+
+from mpl_toolkits import mplot3d
+import matplotlib.pyplot as plt
+import numpy as np
+
+read the data and assigned the three columns to variables x1, y1, z1 : 
+
+threeDtemp = np.array(np.loadtxt( 'the_next_hint.dat' ))
+threeD = np.array(threeDtemp)
+threeD = threeD.transpose()
+x1 = threeD[0]
+y1 = threeD[1]
+z1 = threeD[2]
+
+
+Made a 3D scatter plot with your x1,y1,z1 data and saved the figure : 
+
+
+fig = plt.figure(figsize = (10, 7))
+ax = plt.axes(projection ="3d")
+ax.scatter3D(x1,y1,z1)
+plt.savefig('the_next_hint.png')
+plt.show()
+
+Printed an informative statement
+
+
+
+10.
+
+
+"""The first puzzle"""
+
+puzzle_part1 = np.array( ([5, 2, 3, 1], [4, 2, 3, 0], [1, 0, -2, 4], [1, 1, -1, 1] ))
+puzzle_part2 = np.array( ([3, 2, 1, 0], [1, 1, 3, 4], [-3, 3, 2, 1], [2, 5, 3, 1] ))
+
+res = np.dot(puzzle_part1, puzzle_part2)
+resTR = res.trace()
+print(resTR)
+
+
+print("The two number to get trace value of 42 are 6 and 7.")
+
+f = 0.007456
+Rsun = 696000
+Rplanet = f * Rsun
+print(Rplanet)
+
+print((2.76*1898)/(28.43*(29.42)**(-1/3)))
+
+print("The alien saw the planet Saturn which is N = 7")
+
+
+key_code.append(7)
+print(key_code)
+
+
+
+13.
+
+Will right click the folder and add it to archive
+click zip and press 'ok'
+In Github, commited the changes and push to origin
+
+
+*****OUT: Thu Dec 09 03:59:10 EST 2021
+    
